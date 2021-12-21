@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+     #first{
+           background-color: beige;
+           width: 217px;
+           
+           border:4px solid darkgreen;
+           /* margin and padding:y(top/bottom) x(left/right) */
+           margin: 100px 50px;
+           padding:100px;
+           box-sizing:border-box; /*fix the border width in the case above*/
+           
+       }
+       #second{
+        background-color: rgb(9, 245, 21);
+        width:200px;
+        height:200px;
+        float: left;
+        margin:20px 40px 15px 50px;/*top right bottom left*/
+        text-align: justify;
+       }
+       #third{
+        background-color: rgb(255, 0, 0);
+        width:200px;
+        height:200px;
+        margin-top: 60px;
+        float: left;
+        padding: 20px;
+       }
+       #clear-float{
+           clear:both;
+       }
+      body{
+          margin: 0px;
+          padding: 0px;
+      }
+    </style>
+</head>
+<body>
+    <div style="background-color: cornflowerblue;text-align: center">this is for check whether margin and padding become zero or not</div>
+    <div id="second">
+    <p >this is for clss example to set font size and font color </p>
+    <p >this is for id example to set background-color </p>
+    </div>
+    <div id="third">
+    <p >this is for class example to set background-color </p>
+    <p >this is for class example and id example to set background-color and to check really id is the most powerful than class </p>
+    </div>
+    <p id="clear-float">this is for logo name</p>
+    <div id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium, quidem illo nobis corrupti vero blanditiis numquam, eligendi sed dignissimos inventore quia, nostrum veritatis sunt quo similique. Minima doloremque ipsum laborum tempora provident sequi consequatur error vel. Asperiores, quae aliquam.</div>
+</body>
+</html>
+<!--class can be used many times in the page but id can be used only once-->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <style type="text/css">
+       #first{
+           background-color: beige;
+           width: 500px;
+           height: 700px;
+           border:4px solid darkgreen;
+           background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/54/Panda_Cub_%284274178112%29.jpg');
+            background-repeat: no-repeat;/*we can use repeat-x and repear-y */
+           /* background-position:top 190px; */
+           /* background-position:center center; */
+           /* background-position:center left; */
+           /* background-position:center right; */
+           /* background-position:top right; */
+           /* background-position:bottom right; */
+       }
+       #second{
+        background-color: rgb(9, 245, 21);
+        width:230px;
+        height:530px;
+        border: 4px rgb(0, 0, 0) solid;
+        border-radius: 30px;
+        
+        font-size: 120%;
+        font-family: "Sofia", sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-variant: small-caps;
+        text-align: justify;
+        text-decoration: underline;
+        float: left;
+       
+       }
+       #third{
+        background-color: rgb(255, 0, 0);
+        width:200px;
+        height:230px;
+       border-style: groove dotted solid dashed;
+       border-color: blue brown black green;
+       border-top-right-radius: 20px;
+       border-width:3px ;
+       float: left;
+       
+       }
+       #clear-float{
+           clear:both;
+       }
+      body{
+          margin: 0px;
+          padding: 0px;
+      }
+      a{
+          text-decoration: none;
+      }
+      a:hover{
+          text-decoration: underline;
+      }
+      a:visited{
+          color: green;
+      }
+       /* a:unvisited and a:active are also used  */
+    </style>
+</head>
+<body>
+    <div style="background-color: cornflowerblue;text-align: center">this is for check whether margin and padding become zero or not</div>
+    <div id="second">
+    <p >this is for clss example to set font size and font color </p>
+    <p >this is for id example to set background-color </p>
+    </div>
+    <div id="third">
+    <p >this is for class example to set background-color </p>
+    <p >this is for class example and <span style="text-decoration: underline">id example to set background-color </span> and to check really id is the most powerful than class </p>
+    <a href="http://www.google.com" title="This is google" target="_blank">click for google</a>
+    </div>
+    <p id="clear-float">this is for logo name</p>
+    <div id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium, quidem illo nobis corrupti vero blanditiis numquam, eligendi sed dignissimos inventore quia, nostrum veritatis sunt quo similique. Minima doloremque ipsum laborum tempora provident sequi consequatur error vel. Asperiores, quae aliquam.</div>
+    
+</body>
+</html>
+<!-- class can be used many times in the page but id can be used only once  -->

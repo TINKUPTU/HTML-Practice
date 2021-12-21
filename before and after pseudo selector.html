@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+      body{
+          margin: 0px;
+          padding: 0px;
+          background-color: black;
+          color:white;
+         
+      }
+      html{
+          font-size: 10px;
+      }
+      li.item{
+          list-style: none;
+          margin-top: 6px;
+
+      }
+      li.item a{
+          text-decoration: none;
+          color: white;
+      }
+      li.item a:hover{
+          text-decoration: underline;
+      }
+      ul.navigation{
+          display: flex;
+          justify-content:space-evenly;
+          font-size: 2.5rem;
+      }
+      /*  section::before{
+          content: "Below are the contents of our sectoin";
+      } */
+       header::before{
+        /* background: url('https://source.unsplash.com/user/erondu/1600x900')no-repeat center center/cover; */
+
+        background: url('./image/tajmahal.jpg')no-repeat center center/cover;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          width: 100vw;
+          z-index: -1;
+          opacity: 0.5;
+      }
+       section h2{
+          font-size: 4.8rem;
+      }
+      section{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 2.5rem;
+          height: 60vh;
+          /* border: 2px solid red; */
+          justify-content: center;
+          margin:1.5rem 15rem;
+      }
+     section p{
+          text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">services</a></li>
+                <li class="item"><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section>
+        <h2>Welcome to coding world.</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque illum maxime magni optio vero eaque voluptatibus repellendus ex aliquam, officiis quisquam pariatur nulla ea doloribus incidunt ratione. Perferendis, ab. Cumque necessitatibus sed delectus itaque voluptatum quia quidem tempore dolore maiores. </p>
+        
+    </section>
+</body>
+</html>

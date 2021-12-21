@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables in css/custom properties</title>
+    <style>
+        .box {
+
+            width: 200px;
+            height: 200px;
+            background: rebeccapurple;
+            position: relative;
+
+             /* animation-name: tinku;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-fill-mode:backwards;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out;
+            animation-direction: reverse;  */
+
+            /* this property can be shorthand as below */
+            
+            /* animation:animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode ; */
+
+            animation-name: tinku1;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-direction: normal;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes tinku {
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 600px;
+            }
+        }
+
+        @keyframes tinku1 {
+            0% {
+                top: 0px;
+                left: 0px;
+
+            }
+
+            40% {
+                top: 260px;
+                left: 0px;
+
+            }
+
+            70% {
+                top: 260px;
+                left: 260px;
+            }
+
+            100% {
+                top: 0px;
+                left: 260px;
+            }
+
+        }
+
+        
+
+        .container {
+height: 260px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+
+    </div>
+</body>
+
+</html>

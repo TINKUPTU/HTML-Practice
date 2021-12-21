@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox1</title>
+    <style>
+        .box-wrapper {
+            border: 3px solid black;
+            display: flex;
+
+            /* align-content property of flex container are below */
+           
+            /*multiple rows or columns items are flowing in the direction cross-axis by removing space between them */
+            height: 400px;
+            flex-wrap: wrap;
+            /* align-items: flex-end;
+            align-items: center; */
+           
+            /* align-content: flex-end;
+            align-content: flex-start;
+            align-content: space-around;
+            align-content: space-between;
+            align-content: stretch;
+            align-content:space-evenly ;
+            align-content: center; */
+
+             
+             flex-direction: column; 
+            height: 300px;
+            /* align-items: flex-start;
+            align-items:flex-end;
+            align-items:center;
+            */
+
+            /* align-content: flex-end;
+            align-content: flex-start;
+            align-content: space-around;
+           
+            align-content: stretch;
+            align-content:space-evenly ;
+            align-content: center;
+            align-content: space-between;
+            justify-content: space-evenly; */
+            
+            
+            
+
+        }
+
+        .box {
+            border: 1px solid rgb(223, 50, 6);
+            font-size: 10px;
+            width: 300px;
+
+        }
+
+        .box1 {
+
+            background: rgb(70, 138, 170);
+        }
+
+        .box2 {
+
+            background: rgb(152, 201, 137);
+        }
+
+        .box3 {
+
+            background: rgb(226, 223, 74);
+        }
+
+        .box4 {
+
+            background: rgb(107, 74, 226);
+        }
+
+        .box4 {
+
+            background: rgb(211, 13, 178);
+        }
+
+        .box5 {
+
+            background: rgb(72, 13, 211);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-wrapper">
+
+        <div class="box box1">
+            <h2>Box1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, iusto. Iusto maiores
+                perferendis totam sapiente neque officiis magni esse natus officia, vel velit ratione mollitia nisi
+                pariatur
+            </p>
+        </div>
+        <div class="box box2">
+            <h2>Box2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, iusto. Iusto maiores
+                perferendis totam sapiente neque officiis magni esse natus officia, vel velit ratione mollitia nisi
+                pariatur
+            </p>
+        </div>
+        <div class="box box3">
+            <h2>Box3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, iusto. Iusto maiores
+                perferendis totam sapiente neque officiis magni esse natus officia, vel velit ratione mollitia nisi
+                pariatur
+            </p>
+        </div>
+        <div class="box box4">
+            <h2>Box4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, iusto. Iusto maiores
+                perferendis totam sapiente neque officiis magni esse natus officia, vel velit ratione mollitia nisi
+                pariatur
+            </p>
+        </div>
+        <div class="box box5">
+            <h2>Box5</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, iusto. Iusto maiores
+                perferendis totam sapiente neque officiis magni esse natus officia, vel velit ratione mollitia nisi
+                pariatur
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
